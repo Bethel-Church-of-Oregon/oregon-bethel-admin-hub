@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오레곤벧엘장로교회 행정시스템 운영셀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  :root{
+    --ink:#1c1c1a;
+    --paper:#faf7f0;
+    --line:#dcd6c6;
+    --accent:#7a3b2e;
+    --accent-ink:#fdf1ec;
+    --muted:#6b6558;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Noto Sans KR', sans-serif;
+  }
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  header{
+    border-bottom:1px solid var(--line);
+    padding:56px 0 36px;
+  }
+  .eyebrow{
+    font-size:12px;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:14px;
+  }
+  h1{
+    font-family:'Noto Serif KR', serif;
+    font-weight:700;
+    font-size:clamp(28px, 4vw, 38px);
+    line-height:1.35;
+    margin:0 0 12px;
+    text-wrap:balance;
+  }
+  header p{
+    color:var(--muted);
+    font-size:15px;
+    line-height:1.7;
+    max-width:60ch;
+    margin:0;
+  }
+  main{
+    padding:40px 0 24px;
+  }
+  .list{
+    display:flex;
+    flex-direction:column;
+    border-top:1px solid var(--line);
+    margin-bottom:8px;
+  }
+  .card{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:24px 6px;
+    text-decoration:none;
+    color:var(--ink);
+    border-bottom:1px solid var(--line);
+    transition:background .15s ease, color .15s ease, padding-left .15s ease;
+  }
+  .card:hover, .card:focus-visible{
+    background:var(--ink);
+    color:var(--accent-ink);
+    padding-left:16px;
+    outline:none;
+  }
+  .card:hover .card-icon, .card:focus-visible .card-icon{
+    background:var(--accent);
+    color:#fff;
+  }
+  .card-index{
+    flex:0 0 auto;
+    font-family:'Noto Serif KR', serif;
+    font-size:13px;
+    color:var(--muted);
+    width:20px;
+  }
+  .card:hover .card-index, .card:focus-visible .card-index{
+    color:#d8cfc4;
+  }
+  .card-icon{
+    flex:0 0 auto;
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--accent-ink);
+    color:var(--accent);
+    font-size:16px;
+  }
+  .card-body{flex:1 1 auto;}
+  .card-title{
+    font-weight:700;
+    font-size:16px;
+    margin-bottom:4px;
+  }
+  .card-sub{
+    font-size:12.5px;
+    color:var(--muted);
+  }
+  .card:hover .card-sub, .card:focus-visible .card-sub{
+    color:#d8cfc4;
+  }
+  .card-arrow{
+    flex:0 0 auto;
+    font-size:13px;
+    color:var(--muted);
+  }
+  .card:hover .card-arrow, .card:focus-visible .card-arrow{
+    color:var(--accent-ink);
+  }
+  footer{
+    border-top:1px solid var(--line);
+    padding:24px 0 48px;
+    font-size:12.5px;
+    color:var(--muted);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .note{
+    background:var(--accent-ink);
+    border:1px solid #e5cfc3;
+    color:#6b3a2b;
+    font-size:12.5px;
+    line-height:1.6;
+    padding:14px 16px;
+    margin-bottom:32px;
+  }
+  .note code{
+    background:#fff;
+    padding:1px 5px;
+    border:1px solid #e5cfc3;
+    font-size:11.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Oregon Bethel Presbyterian Church</div>
+      <h1>오레곤벧엘장로교회<br>행정시스템 운영셀</h1>
+      <p>교회 행정 업무를 위한 시스템 바로가기 페이지입니다. 아래 항목을 눌러 각 사이트로 이동하세요.</p>
+    </header>
+
+    <main>
+      <div class="note">
+        각 항목의 이동 주소는 예시입니다. 코드 내 <code>href="#"</code> 부분을 실제 사용하시는 사이트 주소로 바꿔주세요.
+      </div>
+
+      <div class="list">
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <span class="card-index">01</span>
+          <span class="card-icon"><i class="fa-solid fa-church"></i></span>
+          <span class="card-body">
+            <span class="card-title">교회 홈페이지</span>
+            <span class="card-sub">오레곤벧엘장로교회 공식 홈페이지</span>
+          </span>
+          <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <span class="card-index">02</span>
+          <span class="card-icon"><i class="fa-solid fa-calendar-check"></i></span>
+          <span class="card-body">
+            <span class="card-title">장소예약시스템</span>
+            <span class="card-sub">교회 시설 및 공간 예약</span>
+          </span>
+          <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <span class="card-index">03</span>
+          <span class="card-icon"><i class="fa-solid fa-boxes-stacked"></i></span>
+          <span class="card-body">
+            <span class="card-title">자산관리시스템</span>
+            <span class="card-sub">교회 비품 및 자산 현황 관리</span>
+          </span>
+          <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <span class="card-index">04</span>
+          <span class="card-icon"><i class="fa-brands fa-github"></i></span>
+          <span class="card-body">
+            <span class="card-title">행정시스템 운영셀 깃허브 Repo</span>
+            <span class="card-sub">소스 코드 및 개발 저장소</span>
+          </span>
+          <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+
+        <a class="card" href="#" target="_blank" rel="noopener">
+          <span class="card-index">05</span>
+          <span class="card-icon"><i class="fa-brands fa-google-drive"></i></span>
+          <span class="card-body">
+            <span class="card-title">구글 드라이브</span>
+            <span class="card-sub">공유 문서 및 자료 보관함</span>
+          </span>
+          <span class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <span>© 오레곤벧엘장로교회 행정시스템 운영셀</span>
+      <span>Administration System Operations Cell</span>
+    </footer>
+  </div>
+</body>
+</html>
